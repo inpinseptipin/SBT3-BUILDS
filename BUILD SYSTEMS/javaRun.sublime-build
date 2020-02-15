@@ -1,0 +1,31 @@
+/*
+    Java Build Configuration for Sublime Text 3
+
+    By Satyarth Arora
+*/
+
+{
+	
+  "cmd": "javac $file && START cmd /k java $file_base_name",
+  "shell": true,
+  "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+  "selector": "source.java",
+
+  "variants":
+  [
+  	{
+  		"name":"JAVA : Compile",
+  		"cmd":"javac $file",
+  		"shell":true,
+  		"selector":"source.java"
+  	},
+  	{
+  		"name":"JAVA : Package Compile",
+  		"cmd":"javac -d $file_path $file",
+  		"shell":true,
+  		"selector":"source.java"
+  	}
+  ]
+  
+
+}

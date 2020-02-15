@@ -1,0 +1,29 @@
+{
+	"cmd":"gcc $file_name",
+	"shell":true,
+	"selector":"source.c",
+	"variants":
+	[
+		{
+			"name":"C Compile and Run",
+			"cmd":"gcc $file_name -o $file_base_name && START cmd /k $file_base_name",
+			"shell":true,
+			"selector":"source.c"
+		},
+
+		{
+			"name":"C Graphics Compile",
+			"cmd":"g++ $file_name -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -o $file_base_name && START cmd /k $file_base_name",
+			"shell":true,
+			"selector":"source.c"	
+		},
+
+		{
+			"name":"RUN C Graphics",
+			"shell":true,
+			"cmd":["START cmd /k $file_base_name"],
+			"selector":"source.c"	
+
+		}
+	]
+}

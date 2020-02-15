@@ -1,0 +1,10 @@
+/*
+	Ruby Build Configuration file for sublime Text 3
+
+	By Satyarth Arora
+*/
+
+{
+	"shell_cmd": "START cmd /k ruby $file_name",
+	"selector":"source.rb"
+}

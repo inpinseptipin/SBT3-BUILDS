@@ -1,0 +1,10 @@
+/*
+	Node Build Configuration File for Sublime Text 3
+
+	By Satyarth Arora
+*/
+
+{
+	"shell_cmd": "START cmd /k node $file_name ",
+	"selector":"source.js"
+}

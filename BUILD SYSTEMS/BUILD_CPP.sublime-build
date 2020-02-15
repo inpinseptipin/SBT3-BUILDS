@@ -1,0 +1,17 @@
+/*
+	C++ Build Configuration File for Sublime Text 3
+	By Satyarth Arora
+*/
+{
+	
+	"cmd":"g++ $file_name",
+	"selector":"source.cpp",
+	"variants":
+	[
+		{
+			"name":"Compile and Run",
+			"shell_cmd":"g++ $file_name -o $file_base_name && START cmd /k $file_base_name",
+			"selector":"source.cpp",
+		}
+	]
+}
